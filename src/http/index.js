@@ -1,5 +1,4 @@
 import axios from 'vue-ts-axios/dist/types'
-
 const API_URL = 'http://localhost:8000/api'
 const api = axios.create({
   withCredentials: true,
