@@ -1,7 +1,15 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import './registerServiceWorker';
-import router from './router';
-import store from './store';
+import { createApp } from 'vue'
+import PrimeVue from 'primevue/config'
+import 'primevue/resources/themes/saga-blue/theme.css'
+import 'primevue/resources/primevue.min.css'
+import 'primeicons/primeicons.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap'
+import './assets/styles/reset.css'
+import './assets/styles/main.scss'
+import App from './App.vue'
+import './registerServiceWorker'
+import router from './router'
+import store from './store'
 
-createApp(App).use(store).use(router).mount('#app');
+createApp(App).use(store).use(PrimeVue).use(router).mount('#app')
